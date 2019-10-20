@@ -35,9 +35,9 @@ class UI {
 document.getElementById('form').addEventListener('submit', function(e){
     const name = document.getElementById('name').value;
     const field = document.getElementById('field').value;
-    const year = document.getElementById('year'.value);
-    const country = document.getElementById('country'.value);
-    const image = document.getElementById('image'.value);
+    const year = document.getElementById('year').value;
+    const country = document.getElementById('country').value;
+    const image = document.getElementById('image').value;
 
     const scientist = new Scientist(name, field, year, country, image);
     //console.log(scientist);
