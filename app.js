@@ -40,24 +40,24 @@ document.getElementById('form').addEventListener('submit', function(e){
     const image = document.getElementById('image'.value);
 
     const scientist = new Scientist(name, field, year, country, image);
-    console.log(scientist);
+    //console.log(scientist);
     const ui = new UI();
 
     ui.addScientistToList(scientist);
 
     ui.clearForm();
 
-    e.preventDefault;
+    e.preventDefault();
 });
 
 document.querySelector('.display').addEventListener('click', function(e){
     const ui = new UI();
-
+ 
     ui.removeScientist(e.target);
 
     ui.clearForm();
 
-    e.preventDefault();
+    e.preventDefault(); 
 })
 
 
